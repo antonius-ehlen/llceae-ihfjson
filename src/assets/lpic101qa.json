@@ -1,0 +1,50 @@
+[
+  {
+    "qid": 1,
+    "qtext": "Which of the following commands makes /bin/foo executable by everyone but writable only by its owner?",
+    "qanswers": [
+      {
+        "atext": "A. chmod u=rwx,go=rx /bin/foo",
+        "acorrect": true
+      },
+      {
+        "atext": "B. chmod o+rwx,a+rx /bin/foo",
+        "acorrect": false
+      },
+      {
+        "atext": "C. chmod 577 /bin/foo",
+        "acorrect": false
+      },
+      {
+        "atext": "D. chmod 775 /bin/foo",
+        "acorrect": false
+      }
+    ]
+  },
+  {
+    "qid": 2,
+    "qtext": "What is true regarding UEFI firmware? (Choose two.)",
+    "qanswers": [
+      {
+        "atext": "A. It can read and interpret partition tables",
+        "acorrect": false
+      },
+      {
+        "atext": "B. It can use and read certain file systems",
+        "acorrect": true
+      },
+      {
+        "atext": "C. It stores its entire configuration on the /boot/ partition",
+        "acorrect": false
+      },
+      {
+        "atext": "D. It is stored in a special area within the GPT metadata",
+        "acorrect": true
+      },
+      {
+        "atext": "E. It is loaded from a fixed boot disk position",
+        "acorrect": false
+      }
+    ]
+  }
+]

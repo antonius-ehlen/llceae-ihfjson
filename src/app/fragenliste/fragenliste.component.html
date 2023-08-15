@@ -1,0 +1,74 @@
+<p>fragenliste works!</p>
+
+<button (click)="toggleAnswer()">Toggle answers</button>
+<h3>import: iquests</h3>
+<div *ngFor="let query of iquests">
+  ID: {{ query.qid }} <br />
+  FText: {{ query.qtext }} <br />
+  <div *ngFor="let ans of query.qanswers">
+    <!-- toogleTruFalse = false -->
+    <span *ngIf="!toggleTrueFalse">
+      {{ ans.atext }}
+    </span>
+
+    <span class="ansgreen" *ngIf="toggleTrueFalse && ans.acorrect">
+      {{ ans.atext }} - {{ ans.acorrect }}
+    </span>
+
+    <span *ngIf="toggleTrueFalse && !ans.acorrect">
+      {{ ans.atext }} -
+      <span class="ansred">
+        {{ ans.acorrect }}
+      </span>
+    </span>
+  </div>
+  <br />
+</div>
+
+<h3>HttpClient: hquests</h3>
+<div *ngFor="let query of hquests">
+  ID: {{ query.qid }} <br />
+  FText: {{ query.qtext }} <br />
+  <div *ngFor="let ans of query.qanswers">
+    <!-- toogleTruFalse = false -->
+    <span *ngIf="!toggleTrueFalse">
+      {{ ans.atext }}
+    </span>
+
+    <span class="ansgreen" *ngIf="toggleTrueFalse && ans.acorrect">
+      {{ ans.atext }} - {{ ans.acorrect }}
+    </span>
+
+    <span *ngIf="toggleTrueFalse && !ans.acorrect">
+      {{ ans.atext }} -
+      <span class="ansred">
+        {{ ans.acorrect }}
+      </span>
+    </span>
+  </div>
+  <br />
+</div>
+
+<h3>Fetch: fquests</h3>
+<div *ngFor="let query of fquests">
+  ID: {{ query.qid }} <br />
+  FText: {{ query.qtext }} <br />
+  <div *ngFor="let ans of query.qanswers">
+    <!-- toogleTruFalse = false -->
+    <span *ngIf="!toggleTrueFalse">
+      {{ ans.atext }}
+    </span>
+
+    <span class="ansgreen" *ngIf="toggleTrueFalse && ans.acorrect">
+      {{ ans.atext }} - {{ ans.acorrect }}
+    </span>
+
+    <span *ngIf="toggleTrueFalse && !ans.acorrect">
+      {{ ans.atext }} -
+      <span class="ansred">
+        {{ ans.acorrect }}
+      </span>
+    </span>
+  </div>
+  <br />
+</div>
